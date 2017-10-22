@@ -12,11 +12,11 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Portmanteau):
 
 ## What's in this repo?
 
-The only thing included here is the core function to generate portmanteaux - the quality control checks (and the dictionaries they use) are kept private to protect the bot from having unsavoury words put in its mouth.
+The only thing included here is the core function to generate portmanteaux - the quality control functions (and the dictionaries they use) are kept private to protect the bot from having unsavoury words put in its mouth.
 
 ## Why didn't the bot reply to my 2-word comment?
 
-It must have failed a quality check. Perhaps one of the words in your comment was less than 5 characters. Perhaps your comment had a mundane word in it like "thanks" or "please". Perhaps it contained bad language or produced a portmanteau that did. The bot constantly has hundreds of comments to choose from and so vetoes the vast majority of them (see 'Quality controls' below).
+If it was a 2-word comment with no weird punctuation, it must have failed a quality check. Perhaps one of the words in your comment was less than 5 characters. Perhaps your comment had a mundane word in it like "thanks", "please", or it was someone's name. Perhaps it contained bad language or produced a portmanteau that did. The bot constantly has hundreds of comments to choose from and so vetoes the vast majority of them (see the list of quality controls below).
 
 ## How does the bot work?
 
