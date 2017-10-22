@@ -1,30 +1,28 @@
 # /u/PORTMANTEAU-BOT
 
-### FAQ
-
-**What is [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT)?**
+##What is [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT)
 
 It's a Reddit bot which automatically generates portmanteaux of 2-word Reddit comments and posts them as replies.
 
-**What's a portmanteau?**
+##What's a portmanteau
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Portmanteau):
 
 > A portmanteau (/pɔːrtˈmæntoʊ/, /ˌpɔːrtmænˈtoʊ/; plural portmanteaus or portmanteaux /-ˈtoʊz/) or portmanteau word is a linguistic blend of words, in which parts of multiple words or their phones (sounds) are combined into a new word, as in smog, coined by blending smoke and fog, or motel, from motor and hotel. In linguistics, a portmanteau is defined as a single morph that represents two or more morphemes.
 
-**What's in this repo?**
+##What's in this repo
 
 The only thing included here is the core function to generate portmanteaux - the quality control checks (and the dictionaries they use) are kept private to protect the bot from having unsavoury words put in its mouth.
 
-**Why didn't the bot reply to my 2-word comment?**
+##Why didn't the bot reply to my 2-word comment
 
 It must have failed a quality check. Perhaps one of the words in your comment was less than 5 characters. Perhaps your comment had a mundane word in it like "thanks" or "please". Perhaps it contained bad language or produced a portmanteau that did. The bot constantly has hundreds of comments to choose from and so vetoes the vast majority of them (see 'Quality controls' below).
 
-**How does the bot work?**
+##How does the bot work
 
 The bot streams [all comments from across Reddit](https://www.reddit.com/r/all/comments/) and looks for 2-word comments. It does some quality control (see below) which vetoes most of those comments as bad portmanteau fodder. If it finds a good comment, it constructs a portmanteau and applies some more quality control checks, abandoning any bad results. Finally, it posts the portmanteaux that make it through. It also checks its post history, deleting its downvoted comments and [defending its honour](https://www.reddit.com/r/fakealbumcovers/comments/72hgo4/wizard_people_lets_be_poor/dnixkbw/?context=3) from unfair human harassment.
 
-**What kind of quality controls are there?**
+##What kind of quality controls are there
 
 There are two sets of filters: one on the comments read from Reddit as inputs, and one on the output portmanteaux that are considered for posting:
 
@@ -44,7 +42,7 @@ There are two sets of filters: one on the comments read from Reddit as inputs, a
 
 2. Veto portmanteaux which contain slurs.
 
-**How are the portmanteaux constructed?**
+##How are the portmanteaux constructed
 
 Here's a brief summary of the procedure:
 
@@ -64,7 +62,7 @@ Here's a brief summary of the procedure:
 
 8. Priority is given to the vowel from string B and it replaces the vowel from string A, as this helps the portmanteau rhyme better with the original phrase.
 
-**Can I see the code that does this?**
+##Can I see the code that does this
 
 All I'm making available is the function that creates portmanteaux, which you can try out by cloning this repo and using the script [demoPM.py](demoPM.py), for example:
 
@@ -88,12 +86,12 @@ $> ./demoPM.py flabby hamster
 Output portmanteau is 'flamster'
 ```
 
-**How well does it work?**
+##How well does it work
 
 You tell me - the bot's best efforts are viewable [here](https://www.reddit.com/user/portmanteau-bot/comments/?sort=hot).
 
 
-**Any future plans?**
+##Any future plans
 
 Use the bot's post history (with associated upvotes) to train a neural network as a binary classifer to separate good and bad portmanteaux. Then, slot this in right before posting as a final quality check, hopefully improving the quality of future output.
 
