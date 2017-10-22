@@ -2,7 +2,7 @@
 
 ### FAQ
 
-** WTF is this?*
+*- WTF is this?*
 
 This is a public repo showing some of the code for [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT), a Reddit bot which automatically generates portmanteaux of 2-word Reddit comments and posts them as replies. The only thing included in this repo is the core function to generate portmanteaux - the quality control checks (including their dictionaries) are kept private.
 
