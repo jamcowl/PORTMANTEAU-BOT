@@ -2,24 +2,33 @@
 
 ### FAQ
 
-**WTF is this?**
+**What is [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT)?**
 
-This is a public repo showing some of the code for [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT), a Reddit bot which automatically generates portmanteaux of 2-word Reddit comments and posts them as replies. The only thing included in this repo is the core function to generate portmanteaux - the quality control checks (including their dictionaries) are kept private.
+It's a Reddit bot which automatically generates portmanteaux of 2-word Reddit comments and posts them as replies.
+
+**What's a portmanteau?**
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Portmanteau):
 
 > A portmanteau (/pɔːrtˈmæntoʊ/, /ˌpɔːrtmænˈtoʊ/; plural portmanteaus or portmanteaux /-ˈtoʊz/) or portmanteau word is a linguistic blend of words, in which parts of multiple words or their phones (sounds) are combined into a new word, as in smog, coined by blending smoke and fog, or motel, from motor and hotel. In linguistics, a portmanteau is defined as a single morph that represents two or more morphemes.
 
-### Functionality
+**What's in this repo?**
 
-The bot streams [all comments from across Reddit](https://www.reddit.com/r/all/comments/) and looks for 2-word comments. It does some quality control (see below) which vetoes most of those comments as bad portmanteau fodder. Then it constructs a portmanteau of a good comment and applies some more quality control to the output, vetoing the bad results. Finally, it posts any portmanteaux that make it through.
+The only thing included here is the core function to generate portmanteaux - the quality control checks (and the dictionaries they use) are kept private to protect the bot from having unsavoury words put in its mouth.
 
-It also checks its post history, deleting its downvoted comments and [defending its honour](https://www.reddit.com/r/movies/comments/7383ja/new_actors_who_will_become_big_in_the_next_510/dnokcd4/?context=3) from unfair human harassment.
+**Why didn't the bot reply to my 2-word comment?**
 
+It must have failed a quality check. Perhaps one of the words in your comment was less than 5 characters. Perhaps your comment had a mundane word in it like "thanks" or "please". Perhaps it contained bad language or produced a portmanteau that did. The bot constantly has hundreds of comments to choose from and so vetoes the vast majority of them (see 'Quality controls' below).
 
-### Quality controls
+**How does the bot work?**
 
-##### On input
+The bot streams [all comments from across Reddit](https://www.reddit.com/r/all/comments/) and looks for 2-word comments. It does some quality control (see below) which vetoes most of those comments as bad portmanteau fodder. Then it constructs a portmanteau of a good comment and applies some more quality control to the output, vetoing the bad results. Finally, it posts any portmanteaux that make it through. It also checks its post history, deleting its downvoted comments and [defending its honour](https://www.reddit.com/r/movies/comments/7383ja/new_actors_who_will_become_big_in_the_next_510/dnokcd4/?context=3) from unfair human harassment.
+
+**What kind of quality controls are there?**
+
+There are two sets of filters: one on the comments read from Reddit as inputs, and one on the output portmanteaux that are considered for posting:
+
+##### Controls on input
 
 1. Require each of the 2 words to be at least 5 letters long
 
@@ -29,7 +38,7 @@ It also checks its post history, deleting its downvoted comments and [defending 
 
 4. Veto comments where 1 of the words has a "bad" ending such as "-ing", as these tend to make meaningless portmanteaux.
 
-##### On output
+##### Controls on output
 
 1. Veto portmanteaux which are shorter than the shortest input word.
 
