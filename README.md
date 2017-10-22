@@ -81,10 +81,9 @@ $> ./demoPM.py television evangelist
 Output portmanteau is 'televangelist'
 ```
 
-```bash
-$> ./demoPM.py flabby hamster
-Output portmanteau is 'flamster'
-```
+## Where does the bot live?
+
+It used to be confined to an old Ubuntu laptop under my bed, but thanks to the generous [aws educate](https://education.github.com/pack) student discount it has ascended to the divine halls of Amazon Web Services where it shall live forever more... or at least until the next time [AWS breaks](https://www.recode.net/2017/3/2/14792636/amazon-aws-internet-outage-cause-human-error-incorrect-command).
 
 ## How well does it work?
 
