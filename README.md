@@ -44,7 +44,7 @@ There are two sets of filters: one on the comments read from Reddit as inputs, a
 
 ## How are the portmanteaux constructed?
 
-Here's a brief summary of the procedure:
+Here's a brief summary of the procedure, for which you can read the source code in the function [makepm()](demoPM.py#L71):
 
 1. Look for 3-letter strings in common - if found, stitch the words together over those. Otherwise, continue.
 
