@@ -1,4 +1,4 @@
-# PORTMANTEAU-BOT FAQ
+# Portmanteau Bot
 
 ## What is [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT)?
 
@@ -64,7 +64,7 @@ Here's a brief summary of the procedure, for which you can read the source code 
 
 ## Can I see the code that does this?
 
-Sure - I've made the portmanteau function publically available, which you can try out yourself by cloning this repo and using the script [demoPM.py](demoPM.py), for example:
+Sure - you can read it or try it out yourself by cloning this repo and using the script [demoPM.py](demoPM.py), for example:
 
 ```bash
 $> ./demoPM.py labrador poodle
@@ -91,7 +91,7 @@ Output portmanteau is 'flamster'
 You tell me - the bot's best efforts are viewable [here](https://www.reddit.com/user/portmanteau-bot/comments/?sort=hot).
 
 
-## Any future plans
+## Any future plans?
 
 Use the bot's post history (with associated upvotes) to train a neural network as a binary classifer to separate good and bad portmanteaux. Then, slot this in right before posting as a final quality check, hopefully improving the quality of future output.
 
