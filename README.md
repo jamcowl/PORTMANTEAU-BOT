@@ -83,7 +83,7 @@ Output portmanteau is 'televangelist'
 
 ## Where does the bot live?
 
-It used to be confined to an old Ubuntu laptop under my bed, but thanks to the generous [aws educate](https://education.github.com/pack) student discount it has ascended to the divine halls of Amazon Web Services where it shall live forever more... or at least until the next time [AWS breaks](https://www.recode.net/2017/3/2/14792636/amazon-aws-internet-outage-cause-human-error-incorrect-command).
+It used to be confined to an old Ubuntu laptop under my bed, but thanks to the [GitHub student developer pack](https://education.github.com/pack), which includes [AWS educate](https://aws.amazon.com/education/awseducate/), it has ascended (for free!) to the divine halls of Amazon Web Services where it shall live forever more... or at least until the next time [AWS breaks](https://www.recode.net/2017/3/2/14792636/amazon-aws-internet-outage-cause-human-error-incorrect-command).
 
 ## How well does it work?
 
