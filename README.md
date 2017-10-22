@@ -26,7 +26,7 @@ The bot streams [all comments from across Reddit](https://www.reddit.com/r/all/c
 
 There are two sets of filters: one on the comments read from Reddit as inputs, and one on the output portmanteaux that are considered for posting:
 
-##### Controls on input
+**Controls on input**
 
 1. Require each of the 2 words to be at least 5 letters long
 
@@ -36,7 +36,7 @@ There are two sets of filters: one on the comments read from Reddit as inputs, a
 
 4. Veto comments where 1 of the words has a "bad" ending such as "-ing", as these tend to make meaningless portmanteaux.
 
-##### Controls on output
+**Controls on output**
 
 1. Veto portmanteaux which are shorter than the shortest input word.
 
