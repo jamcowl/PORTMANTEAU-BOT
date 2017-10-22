@@ -1,4 +1,4 @@
-# PortmanteauBot
+# /u/PORTMANTEAU-BOT
 
 ### FAQ
 
@@ -22,7 +22,7 @@ It must have failed a quality check. Perhaps one of the words in your comment wa
 
 **How does the bot work?**
 
-The bot streams [all comments from across Reddit](https://www.reddit.com/r/all/comments/) and looks for 2-word comments. It does some quality control (see below) which vetoes most of those comments as bad portmanteau fodder. Then it constructs a portmanteau of a good comment and applies some more quality control to the output, vetoing the bad results. Finally, it posts any portmanteaux that make it through. It also checks its post history, deleting its downvoted comments and [defending its honour](https://www.reddit.com/r/movies/comments/7383ja/new_actors_who_will_become_big_in_the_next_510/dnokcd4/?context=3) from unfair human harassment.
+The bot streams [all comments from across Reddit](https://www.reddit.com/r/all/comments/) and looks for 2-word comments. It does some quality control (see below) which vetoes most of those comments as bad portmanteau fodder. If it finds a good comment, it constructs a portmanteau and applies some more quality control checks, abandoning any bad results. Finally, it posts the portmanteaux that make it through. It also checks its post history, deleting its downvoted comments and [defending its honour](https://www.reddit.com/r/fakealbumcovers/comments/72hgo4/wizard_people_lets_be_poor/dnixkbw/?context=3) from unfair human harassment.
 
 **What kind of quality controls are there?**
 
@@ -44,10 +44,9 @@ There are two sets of filters: one on the comments read from Reddit as inputs, a
 
 2. Veto portmanteaux which contain slurs.
 
+**How are the portmanteaux constructed?**
 
-### Portmanteau creation function
-
-Here's a brief summary of its flow:
+Here's a brief summary of the procedure:
 
 1. Look for 3-letter strings in common - if found, stitch the words together over those. Otherwise, continue.
 
@@ -65,10 +64,9 @@ Here's a brief summary of its flow:
 
 8. Priority is given to the vowel from string B and it replaces the vowel from string A, as this helps the portmanteau rhyme better with the original phrase.
 
+**Can I see the code that does this?**
 
-### Example Usage
-
-The portmanteau function can be used in isolation from the command line, using the script [demoPM.py](demoPM.py), for example:
+All I'm making available is the function that creates portmanteaux, which you can try out by cloning this repo and using the script [demoPM.py](demoPM.py), for example:
 
 ```bash
 $> ./demoPM.py labrador poodle
@@ -90,12 +88,12 @@ $> ./demoPM.py flabby hamster
 Output portmanteau is 'flamster'
 ```
 
+**How well does it work?**
 
-### Results
-
-Comments are viewable [here](https://www.reddit.com/user/PORTMANTEAU-BOT/comments).
+You tell me - the bot's best efforts are viewable [here](https://www.reddit.com/user/portmanteau-bot/comments/?sort=hot).
 
 
-### TODO
+**Any future plans?**
 
-Train a neural network to classify good and bad portmanteaux based on the bots post history and upvotes. Use this classifier as a final veto before posting to improve future output.
+Use the bot's post history (with associated upvotes) to train a neural network as a binary classifer to separate good and bad portmanteaux. Then, slot this in right before posting as a final quality check, hopefully improving the quality of future output.
+
