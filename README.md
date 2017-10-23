@@ -1,6 +1,6 @@
 # Portmanteau Bot
 
-## What is [/u/PORTMANTEAU-BOT](www.reddit.com/u/PORTMANTEAU-BOT)?
+## What is [/u/PORTMANTEAU-BOT](https://www.reddit.com/u/PORTMANTEAU-BOT)?
 
 It's a Reddit bot which automatically generates portmanteaux of 2-word Reddit comments and posts them as replies.
 
